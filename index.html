@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Image Editor </title>
+ <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+
+
+ <div class="container">
+
+  <div class="form-Control">
+   <form>
+    <div class="inputBox">
+     <label for="Latitude"></label>
+     <input class="input-field" id="latitude" type="text" placeholder="Enter Latitude">
+    </div>
+    <div class="inputBox">
+     <label for="Longitude"></label>
+     <input class="input-field" type="text" id="longitude" placeholder="Enter Longitude">
+    </div>
+    <div class="inputBox">
+     <label for="Elevation"></label>
+     <input class="input-field" type="text" id="Elevation" placeholder="Enter Elevation">
+    </div>
+    <div class="inputBox">
+     <label for="Accuracy"></label>
+     <input class="input-field" type="text" id="Accuracy" placeholder="Enter Accuracy">
+    </div>
+    <div class="inputBox">
+     <label for="School Name"></label>
+     <input class="input-field" type="text" id="School" placeholder="Enter School Name">
+    </div>
+    <div class="btns inputBox">
+     <input class="buttons_upload" type="file" id="imageAccept">
+    </div>
+    <button type="submit">Convert</button>
+    <!-- <button id="refresh">Refresh</button> -->
+
+   </form>
+  </div>
+  <div class="main">
+
+   <div class="whole">
+    <div class="EditImage" id="setBack">
+     <div class="content">
+
+     </div>
+
+    </div>
+   </div>
+   <button id="Download" onclick=downloadJPG()>Download Image</button>
+  </div>
+ </div>
+
+ </div>
+
+ <script src="./js/index.js"></script>
+ <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>
